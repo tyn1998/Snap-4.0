@@ -601,5 +601,14 @@ public:
   typedef TPairHashImpl2 TPairHashImpl;
 #endif
 
+// Add to solve compile error.
+// For details refer to SNAP Github issues #146.
+struct __exception {
+    int    type;      /* Exception type */
+    char*  name;      /* Name of function causing exception */
+    double arg1;      /* 1st argument to function */
+    double arg2;      /* 2nd argument to function */
+    double retval;    /* Function return value */
+};
 
 #endif
